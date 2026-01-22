@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yelim - Ouverture...</title>
+    
+    <meta property="og:title" content="Regarde ça sur Yelim">
+    <meta property="og:description" content="L'application de référence au Burkina Faso.">
+    <meta property="og:image" content="https://yelim-officiel.github.io/yelim/logo.png">
+
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; text-align: center; background-color: #f5f5f5; }
+        .container { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); max-width: 90%; }
+        .btn { background-color: #000; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block; margin-top: 20px; }
+    </style>
+
+    <script>
+        window.onload = function() {
+            // On récupère l'ID du produit depuis l'URL (ex: /yelim/share/123 -> 123)
+            var path = window.location.pathname;
+            
+            // On attend 1.5 seconde avant de rediriger vers le Play Store
+            // Cela laisse le temps à l'utilisateur de voir le message
+            setTimeout(function() {
+                window.location.href = "https://play.google.com/store/apps/details?id=com.s1.yelim";
+            }, 1500);
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Ouverture de Yelim...</h2>
+        <p>Si l'application ne s'ouvre pas automatiquement, téléchargez-la pour voir cet article.</p>
+        
+        <a href="https://play.google.com/store/apps/details?id=com.s1.yelim" class="btn">
+            Télécharger sur Play Store
+        </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "MJJ6A56JHS.com.s1.yelim",
+        "paths": [ "/legal/*", "/yelim/*", "*" ]
+      }
+    ]
+  }
+}
